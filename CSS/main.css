@@ -1,0 +1,121 @@
+:root {
+  --main-color: #00adf2;
+  --main-color2: #006f8a;
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+header .header-icons-container {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  background-color: var(--main-color);
+}
+
+header .header-icons-container .icons {
+  width: auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 50px;
+  color: white;
+}
+header .icons span {
+  color: white;
+}
+.nav-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+.nav-logo-container {
+  margin-left: 50px;
+}
+.nav-logo-container img {
+  width: 300px;
+  margin-top: 50px;
+}
+.profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+.profile-link a {
+  color: white;
+  border-bottom: 1px white solid;
+}
+.profile-link a:hover {
+  color: var(--main-color);
+  border-bottom: 1px var(--main-color2);
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+}
+.img-background {
+  height: 100%;
+  background-image: url("../assets/Imágenes/Cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-content-container {
+  color: white;
+  display: grid;
+  grid-column: 2;
+  align-content: center;
+  justify-items: center;
+}
+.main-content h1 {
+  font-size: 30px;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  margin-top: 8em;
+}
+.main-content-container a {
+  height: 50px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: var(--main-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content-container a {
+  padding: 10px 15px;
+}
+.main-content-container a:active {
+  color: #415151;
+  background-color: #006f8a;
+}
